@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071a18">
+<meta name="description" content="GuardIQ Smart Heater Safety Controller — monitor laboratory heating equipment and respond to unsafe temperature conditions.">
+<title>GuardIQ — Smarter Lab Heating Safety</title>
+<style>
+:root{--bg:#071a18;--panel:#0d2421;--panel2:#102d29;--mint:#b9f7d5;--green:#52d69a;--white:#f5fbf8;--muted:#a9c2ba;--line:rgba(185,247,213,.15);--orange:#ffbf69}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1140px,calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.04em;font-size:1.4rem}.logo{width:38px;height:38px;border-radius:12px;background:var(--mint);color:#08221a;display:grid;place-items:center;font-weight:900;font-size:1.15rem;box-shadow:0 0 30px #52d69a22}.navlinks{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--mint)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:750;border:1px solid transparent;transition:.2s;cursor:pointer;font-size:.95rem}.btn-primary{background:var(--mint);color:#08221a}.btn-primary:hover{background:#d5ffe6;transform:translateY(-1px)}.btn-ghost{border-color:var(--line);color:var(--white);background:#ffffff05}.btn-ghost:hover{border-color:var(--green)}.hero{padding:78px 0 72px;display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--mint);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}h1{font-size:clamp(2.7rem,5.5vw,4.8rem);line-height:1.02;letter-spacing:-.065em;margin:22px 0}.accent{color:var(--mint)}.hero p{font-size:1.08rem;color:var(--muted);max-width:590px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.micro{font-size:.8rem!important;margin-top:17px;color:#78968b!important}.visual{position:relative;min-height:430px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(ellipse at 50% 30%,#1a4d3d 0%,#102e29 35%,#0b211e 75%);overflow:hidden;display:grid;place-items:center}.visual:before,.visual:after{content:"";position:absolute;border:1px solid #b9f7d51b;border-radius:50%;width:370px;height:370px}.visual:after{width:480px;height:480px}.glow{position:absolute;width:230px;height:230px;background:#52d69a17;filter:blur(40px);border-radius:50%}.device{position:relative;z-index:2;width:218px;padding:17px;border-radius:23px;background:linear-gradient(145deg,#233b36,#0b1715);border:1px solid #d1f8e444;box-shadow:0 30px 70px #0008, inset 0 1px 1px #ffffff20;transform:rotate(-5deg)}.device-top{display:flex;justify-content:space-between;align-items:center;color:#a9c2ba;font-size:.68rem;letter-spacing:.12em;font-weight:800}.device-screen{margin-top:17px;border-radius:14px;background:#06110f;border:1px solid #52d69a33;padding:17px 13px}.screen-label{font-size:.63rem;color:#8eaaa0;text-transform:uppercase;letter-spacing:.1em}.temp{font-size:2.5rem;font-weight:800;letter-spacing:-.06em;color:var(--mint);line-height:1.2}.temp small{font-size:.9rem;letter-spacing:0;color:#8eaaa0}.status{display:flex;align-items:center;gap:7px;font-size:.68rem;color:var(--green);margin-top:7px}.status i{display:block;width:6px;height:6px;background:var(--green);border-radius:50%}.device-bottom{display:flex;gap:7px;margin-top:12px}.mini{height:5px;border-radius:5px;background:#254a3c;flex:1}.mini:first-child{background:var(--green)}.floating{position:absolute;z-index:3;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#0b211eeb;box-shadow:0 15px 35px #0003}.float-one{top:68px;right:22px}.float-two{bottom:63px;left:20px}.float-label{font-size:.68rem;color:var(--muted)}.float-value{font-size:.9rem;font-weight:800}.pill{display:inline-block;padding:4px 8px;border-radius:7px;background:#52d69a1a;color:var(--mint);font-size:.68rem;font-weight:800}.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0}.trustrow{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.trustrow span{color:#86a79a;font-size:.83rem}.trustrow strong{color:#cce8dc;font-size:.87rem}.section{padding:82px 0}.section-head{max-width:680px;margin-bottom:35px}.section h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;letter-spacing:-.05em;margin:13px 0}.section-head p{color:var(--muted);font-size:1.02rem}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{padding:25px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,#102a26,#0a1e1b)}.iconbox{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:#52d69a18;color:var(--mint);font-size:1.3rem;margin-bottom:20px}.card h3{margin:0 0 9px;font-size:1.1rem}.card p{color:var(--muted);font-size:.92rem;margin:0}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.checklist{display:grid;gap:18px;margin-top:25px}.check{display:flex;gap:13px;align-items:flex-start}.checkmark{flex:none;width:25px;height:25px;border-radius:8px;background:#52d69a1a;color:var(--mint);display:grid;place-items:center;font-weight:900}.check b{display:block;margin-bottom:3px}.check span{color:var(--muted);font-size:.9rem}.panel{border:1px solid var(--line);border-radius:24px;padding:27px;background:linear-gradient(145deg,#102d28,#091b18)}.panelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.panelhead b{font-size:.9rem}.metric{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metricbox{padding:17px;border-radius:14px;background:#061815;border:1px solid var(--line)}.metricbox small{color:var(--muted);display:block;font-size:.75rem}.metricbox strong{font-size:1.6rem;letter-spacing:-.04em}.metricbox em{font-style:normal;color:var(--green);font-size:.72rem;display:block}.chart{height:115px;margin-top:18px;border-radius:12px;background:linear-gradient(180deg,#52d69a12,transparent);position:relative;overflow:hidden;border-bottom:1px solid #52d69a33}.chart svg{width:100%;height:100%}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;counter-reset:steps}.step{border-top:1px solid var(--line);padding:23px 15px 0 0}.step:before{counter-increment:steps;content:"0" counter(steps);font-size:.78rem;font-weight:900;color:var(--green);letter-spacing:.1em}.step h3{margin:13px 0 8px}.step p{margin:0;color:var(--muted);font-size:.92rem}.cta{padding:55px;border:1px solid #b9f7d52b;border-radius:26px;background:radial-gradient(ellipse at 100% 0%,#1d4b3a 0%,#102b26 45%,#0a1e1b 100%);display:flex;align-items:center;justify-content:space-between;gap:28px}.cta h2{font-size:clamp(1.8rem,3.6vw,2.8rem);margin:12px 0;letter-spacing:-.05em;line-height:1.08}.cta p{color:var(--muted);max-width:600px;margin-bottom:0}.contactgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}.form{padding:25px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}label{display:block;font-size:.82rem;font-weight:700;margin-bottom:6px;color:#d4e8df}input,select,textarea{width:100%;padding:12px 13px;border-radius:10px;border:1px solid #31534a;background:#071a18;color:var(--white);font:inherit;margin-bottom:15px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--green)}textarea{min-height:95px;resize:vertical}.form .btn{width:100%}.form-note{font-size:.76rem;color:var(--muted);margin:12px 0 0}.footer{padding:27px 0 38px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}.footerrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.disclaimer{font-size:.78rem;color:#78968b;margin-top:17px}.mobile-menu{display:none}
+@media(max-width:850px){.hero,.split,.contactgrid{grid-template-columns:1fr}.hero{padding-top:52px;gap:35px}.visual{min-height:390px}.grid3{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.cta{padding:30px;align-items:flex-start;flex-direction:column}.navlinks{gap:15px}.navlinks a:not(.btn){display:none}.section{padding:62px 0}.split{gap:30px}}
+@media(max-width:480px){.wrap{width:min(100% - 28px,1140px)}.nav{height:68px}.navlinks .btn{padding:9px 11px;font-size:.8rem}.hero{padding-top:42px}h1{font-size:2.75rem}.visual{min-height:350px}.device{transform:scale(.88) rotate(-5deg)}.float-one{right:10px;top:36px}.float-two{left:9px;bottom:36px}.trustrow{justify-content:flex-start}.metric{gap:8px}.metricbox{padding:13px}.cta{padding:24px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#top" aria-label="GuardIQ home"><span class="logo">G</span> GuardIQ</a>
+  <nav class="navlinks" aria-label="Main navigation">
+    <a href="#solution">Solution</a><a href="#how-it-works">How it works</a><a href="#about">Why GuardIQ</a>
+    <a class="btn btn-primary" href="#contact">Request a trial <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="top">
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow"><span class="dot"></span> Laboratory heating safety, reimagined</div>
+    <h1>Don’t leave lab safety <span class="accent">to chance.</span></h1>
+    <p>Meet GuardIQ’s Smart Heater Safety Controller — designed to help laboratories monitor heating equipment, detect unsafe temperature conditions, and trigger a power cut-off response when configured safety limits are reached.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#contact">Request a 30-day trial <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="#solution">Explore the solution <span aria-hidden="true">↓</span></a></div>
+    <p class="micro">Built around one goal: safer labs, fewer preventable heating incidents.</p>
+  </div>
+  <div class="visual" aria-label="Illustration of a smart laboratory heater safety controller">
+    <div class="glow"></div>
+    <div class="floating float-one"><div class="float-label">SYSTEM STATUS</div><div class="float-value"><span class="pill">● Monitoring concept</span></div></div>
+    <div class="device">
+      <div class="device-top"><span>GUARDIQ</span><span>G-01</span></div>
+      <div class="device-screen"><div class="screen-label">Temperature monitor</div><div class="temp">084<small>°C</small></div><div class="status"><i></i> Within configured limit</div><div class="device-bottom"><span class="mini"></span><span class="mini"></span><span class="mini"></span><span class="mini"></span></div></div>
+      <div style="display:flex;justify-content:space-between;margin-top:13px;font-size:.65rem;color:#91aaa0"><span>HEATER INPUT</span><span>SAFETY MODE</span></div>
+    </div>
+    <div class="floating float-two"><div class="float-label">SAFETY RESPONSE</div><div class="float-value">Monitor · Detect · Respond</div></div>
+  </div>
+</section>
+<div class="trust"><div class="wrap trustrow"><span>DESIGNED FOR</span><strong>University laboratories</strong><strong>Research facilities</strong><strong>Testing environments</strong><strong>Lab safety teams</strong></div></div>
+<section class="section" id="solution"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">The solution</div><h2>One extra layer of protection for every heating session.</h2><p>Human oversight matters. GuardIQ is envisioned as an additional safety layer to support lab teams when heating equipment needs closer monitoring.</p></div>
+  <div class="grid3">
+    <article class="card"><div class="iconbox">⌁</div><h3>Continuous temperature monitoring</h3><p>Track temperature readings and compare them with safety thresholds configured for the equipment and use case.</p></article>
+    <article class="card"><div class="iconbox">ϟ</div><h3>Automatic cut-off response</h3><p>When connected to compatible hardware and properly configured, the system is designed to disconnect power when unsafe conditions are detected.</p></article>
+    <article class="card"><div class="iconbox">↗</div><h3>Clear safety alerts</h3><p>Give laboratory staff a clearer signal when readings cross configured limits, so they can respond promptly.</p></article>
+  </div>
+</div></section>
+<section class="section" id="about" style="background:#091f1c;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap split">
+  <div><div class="eyebrow">Why GuardIQ</div><h2>Protect your people, equipment, and peace of mind.</h2><p style="color:var(--muted)">Unexpected overheating can put people, experiments, and valuable lab equipment at risk. GuardIQ aims to make safer heating workflows easier to adopt.</p>
+    <div class="checklist">
+      <div class="check"><div class="checkmark">✓</div><div><b>Designed for simple integration</b><span>A plug-and-play approach is the product vision; compatibility must be validated for each heater and electrical setup.</span></div></div>
+      <div class="check"><div class="checkmark">✓</div><div><b>Safety thresholds that fit the use case</b><span>Configure temperature limits based on equipment guidance, approved lab procedures, and a qualified safety review.</span></div></div>
+      <div class="check"><div class="checkmark">✓</div><div><b>A partner for safer lab practices</b><span>Support existing procedures and supervision rather than replacing trained staff or established safety systems.</span></div></div>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="panelhead"><b>Illustrative monitoring interface</b><span class="pill">Concept preview</span></div>
+    <div class="metric"><div class="metricbox"><small>Live temperature</small><strong>84°C</strong><em>Example reading</em></div><div class="metricbox"><small>Configured threshold</small><strong>95°C</strong><em>Example setting</em></div><div class="metricbox"><small>Monitoring state</small><strong style="font-size:1.2rem">Active*</strong><em>Illustrative only</em></div><div class="metricbox"><small>Safety action</small><strong style="font-size:1.2rem">Ready*</strong><em>Hardware-dependent</em></div></div>
+    <div class="chart"><svg viewBox="0 0 500 130" preserveAspectRatio="none" aria-label="Illustrative temperature trend"><defs><linearGradient id="fade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#52d69a" stop-opacity=".35"/><stop offset="1" stop-color="#52d69a" stop-opacity="0"/></linearGradient></defs><path d="M0 100 C35 98 35 76 75 82 S125 90 155 66 S205 78 240 51 S285 65 320 39 S370 56 405 30 S460 42 500 20 L500 130 L0 130Z" fill="url(#fade)"/><path d="M0 100 C35 98 35 76 75 82 S125 90 155 66 S205 78 240 51 S285 65 320 39 S370 56 405 30 S460 42 500 20" fill="none" stroke="#52d69a" stroke-width="3"/></svg></div>
+    <p class="disclaimer">*Illustration only. This page does not connect to a real sensor or control a heater.</p>
+  </div>
+</div></section>
+<section class="section" id="how-it-works"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">How it works</div><h2>A straightforward safety workflow.</h2><p>The intended workflow is simple to understand and designed to fit alongside approved laboratory procedures.</p></div>
+  <div class="steps">
+    <div class="step"><h3>Connect & configure</h3><p>Check heater compatibility, install using qualified personnel, and set validated temperature limits.</p></div>
+    <div class="step"><h3>Monitor conditions</h3><p>Read temperature data and compare it with the configured operating and safety thresholds.</p></div>
+    <div class="step"><h3>Alert & respond</h3><p>Notify the responsible team and, with validated hardware, initiate the configured power cut-off response.</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="wrap"><div class="cta"><div><div class="eyebrow">Let’s make labs safer</div><h2>See if GuardIQ fits your laboratory.</h2><p>Tell us about your lab, your heating equipment, and your safety needs. We’ll follow up about a potential product demonstration or pilot.</p></div><a class="btn btn-primary" href="#contact">Talk to the GuardIQ team <span aria-hidden="true">→</span></a></div></div></section>
+<section class="section" id="contact" style="padding-top:10px"><div class="wrap contactgrid">
+  <div><div class="eyebrow">Get in touch</div><h2 style="font-size:2.3rem">Request a pilot conversation.</h2><p style="color:var(--muted)">Interested in exploring GuardIQ for your institution? Share a few details and prepare an enquiry for the team.</p><div class="checklist"><div class="check"><div class="checkmark">✉</div><div><b>Institution or laboratory</b><span>Tell us where you work and what equipment you use.</span></div></div><div class="check"><div class="checkmark">◷</div><div><b>Demo / pilot enquiry</b><span>Discuss a possible demonstration, compatibility review, or trial.</span></div></div></div></div>
+  <form class="form" id="contactForm">
+    <label for="name">Full name</label><input id="name" name="name" autocomplete="name" placeholder="Your name" required>
+    <label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@institution.edu" required>
+    <label for="org">Institution / laboratory</label><input id="org" name="org" placeholder="University or laboratory name" required>
+    <label for="interest">What are you interested in?</label><select id="interest" name="interest"><option>30-day pilot discussion</option><option>Product demonstration</option><option>Technical compatibility information</option><option>Partnership / other</option></select>
+    <label for="message">Anything we should know? (optional)</label><textarea id="message" name="message" placeholder="Tell us about your lab's heating equipment or safety needs."></textarea>
+    <button class="btn btn-primary" type="submit">Prepare enquiry email ↗</button>
+    <p class="form-note">This demo form opens your email app with the enquiry pre-filled. No information is stored on this website. Add your real team email before publishing.</p>
+    <p id="formStatus" role="status" class="form-note"></p>
+  </form>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footerrow"><a class="brand" href="#top" style="font-size:1.05rem"><span class="logo" style="width:30px;height:30px;border-radius:9px;font-size:.9rem">G</span> GuardIQ</a><span>Smarter monitoring. Safer laboratory workflows.</span><span>© <span id="year"></span> GuardIQ concept</span></div><p class="disclaimer">GuardIQ is presented here as a product concept. Claims about performance, certification, regulatory compliance, compatibility, and safety outcomes must be validated before commercial use. Do not rely on this website as safety instructions or as a substitute for approved lab procedures.</p></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const d = new FormData(this);
+  const subject = encodeURIComponent('GuardIQ pilot enquiry — ' + d.get('org'));
+  const body = encodeURIComponent(
+    'Hello GuardIQ team,\\n\\nI would like to enquire about GuardIQ.\\n\\nName: ' + d.get('name') +
+    '\\nWork email: ' + d.get('email') + '\\nInstitution/lab: ' + d.get('org') +
+    '\\nInterest: ' + d.get('interest') + '\\nDetails: ' + (d.get('message') || 'Not provided') +
+    '\\n\\nPlease let me know the next steps.\\n'
+  );
+  // Replace this placeholder with the team's real contact email before publishing.
+  window.location.href = 'mailto:hello@guardiq.example?subject=' + subject + '&body=' + body;
+  document.getElementById('formStatus').textContent = 'Your email app should open with the enquiry drafted. Replace hello@guardiq.example in the website code with your real team email before publishing.';
+});
+</script>
+</body>
+</html>
